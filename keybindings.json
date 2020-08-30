@@ -1,0 +1,60 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "shift+cmd+r",
+        "command": "workbench.files.action.refreshFilesExplorer"
+    }, 
+    {
+        "key": "cmd+B",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == latex && editorTextFocus",
+        "args": {
+            "snippet": "\\textbf{${TM_SELECTED_TEXT}$0}"
+        }
+    }, // latex key bindingg for bold
+    {
+        "key": "cmd+I",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == latex && editorTextFocus",  // chained clause
+        "args": {
+            "snippet": "\\textit{${TM_SELECTED_TEXT}$0}"
+        }
+    }, // latex key bindnig for italic text
+    {
+        "key": "cmd+shift+M",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == latex && editorTextFocus",  // chained clause
+        "args": {
+            "snippet": "$${TM_SELECTED_TEXT}$0$"
+        }
+    } //  latex key binding for inline math text
+    ,
+    {
+        "key": "cmd+shift+A",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == latex && editorTextFocus",  // chained clause
+        "args": {
+            "snippet": "\\begin{align*}\n\t ${TM_SELECTED_TEXT}$0\n\\end{align*}"
+        }
+    } // latex keybding for easy math boxes
+    ,
+    {
+        "key": "cmd+shift+T",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == latex && editorTextFocus",  // chained clause
+        "args": {
+            "snippet": "\\text{${TM_SELECTED_TEXT}$0}"
+        }
+    }, // latex key binding for math text boxed interstiunog
+    {
+        "key": "cmd+shift+C",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == latex && editorTextFocus",  // chained clause
+        "args": {
+            "snippet": "\\citep{${TM_SELECTED_TEXT}$0}"
+        }
+    } // latex key binding for math text boxed interstiunog
+]
+
+
+
